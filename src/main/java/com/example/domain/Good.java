@@ -17,11 +17,14 @@ public class Good {
     private String material;
     private Integer copies;
     private String imageName;
+
     public Good() { }
+
     public Good( String goodName, Integer price_purchase, Integer price_selling, Integer seller,
                 String date_added, String product_description,  String material,
                 Integer copies, String imageName) {
     }
+
     public Integer getId() {
         return id;
     }

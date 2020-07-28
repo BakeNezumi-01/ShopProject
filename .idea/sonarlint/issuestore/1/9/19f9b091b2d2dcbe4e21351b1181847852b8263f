@@ -1,0 +1,13 @@
+
+‰
+java:S11303"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ºÃÝÙ8ÕÌ°§¹.
+Ž
+java:S1130>"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Á•ªîþÿÿÿÿ8ÕÌ°§¹.
+]
+java:S4684:"@Replace this persistent entity with a simple POJO or DTO object.(ªÈ÷—8ÕÌ°§¹.
+a
+java:S1192"FDefine a constant instead of duplicating this literal "goods" 3 times.(Î°è©üÿÿÿÿ
+]
+java:S4684&"@Replace this persistent entity with a simple POJO or DTO object.(ªÈ÷—8ÕÌ°§¹.
+]
+java:S46842"@Replace this persistent entity with a simple POJO or DTO object.(ªÈ÷—8ÕÌ°§¹.

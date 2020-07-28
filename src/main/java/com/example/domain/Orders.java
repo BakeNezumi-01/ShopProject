@@ -12,6 +12,7 @@ public class Orders {
     private Integer paid;
     private String date;
     private Integer sum;
+
     public Integer getSum() {
         return sum;
     }
@@ -54,8 +55,10 @@ public class Orders {
     public void setPaid(Integer paid) {
         this.paid = paid;
     }
+
     public Orders() {
     }
+
     public Orders(Integer user, Integer good, Integer quantity) {
         this.user = user;
         this.good = good;

@@ -9,13 +9,16 @@ public class Cart {
     private Integer user;
     private Integer good;
     private Integer quantity;
+
     public Cart() {
     }
+
     public Cart(Integer user, Integer good) {
         this.user = user;
         this.good = good;
         quantity = 1;
     }
+
     public Integer getUser() {
         return user;
     }

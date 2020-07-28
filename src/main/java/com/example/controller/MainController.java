@@ -21,18 +21,21 @@ public class MainController {
     private CartRepo cartRepo;
     @Autowired
     private OrdersRepo ordersRepo;
+
     @GetMapping("/")
     public String catalog(Model model) {
         Iterable<Good> goods = goodRepo.findAll();
         model.addAttribute("goods", goods);
         return "catalog";
     }
+
     @GetMapping("/confirm")
     public String confirm(Model model) {
         Iterable<Good> goods = goodRepo.findAll();
         model.addAttribute("goods", goods);
         return "confirm";
     }
+
     @GetMapping("/homePage")
     public String homePage(
             @AuthenticationPrincipal User user,
@@ -46,6 +49,7 @@ public class MainController {
         model.addAttribute("user", user);
         return "homePage";
     }
+
     @PostMapping("/") public String addCart(
             @AuthenticationPrincipal User user,
             @RequestParam Integer goodId, Map<String, Object> model) throws IOException {
@@ -53,6 +57,7 @@ public class MainController {
         cartRepo.save(cart);
         return "catalog";
     }
+
     @PostMapping("/homePage")
     public String addInf(
             @AuthenticationPrincipal User user,

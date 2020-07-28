@@ -20,18 +20,21 @@ public class UserController {
     private UserRepo userRepo;
     @Autowired
     private GoodRepo goodRepo;
+
     @GetMapping
     public String userList(Model model) {
         model.addAttribute("users", userRepo.findAll());
         model.addAttribute("goods", goodRepo.findAll());
         return "userList";
     }
+
     @GetMapping("{user}")
     public String userEditForm(@PathVariable User user, Model model) {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
         return "userEdit";
     }
+
     @PostMapping
     public String userSave(
             @RequestParam String username,

@@ -15,11 +15,13 @@ import java.util.stream.Collectors;
 public class GoodController {
     @Autowired
     private GoodRepo goodRepo;
+
     @GetMapping
     public String goodList(Model model) {
         model.addAttribute("goods", goodRepo.findAll());
         return "good";
     }
+
     @GetMapping("{good}")
     public String userEditForm(@PathVariable Good good,
                                Model model) {
