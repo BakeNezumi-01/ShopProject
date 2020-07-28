@@ -2,18 +2,19 @@
 
 Project of shop structure, realizing downloading items to catalog, adding items to busket, etc.
 
-#Getting Started
+
+# Getting Started
 
 GitHub do not download files larger than 25mb, so you can download whole project and compile it by yourself.
 
-#Built With
+# Built With
 
---Maven
+-- Maven
 
---Spring Boot
+-- Spring Boot
 
---FreeMarker Template
+-- FreeMarker Template
 
-#Testing
+# Testing
 
 Will be later
